@@ -115,28 +115,33 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
               imageUrl: 'assets/images/call.png',
             ),
-            Container(
-              height: 50,
-              width: MediaQuery.of(context).size.width * 0.9,
-              decoration: BoxDecoration(
-                color: Colors.grey.withOpacity(0.2),
-                // : Colors.blue,
-                borderRadius: BorderRadius.circular(10),
-                border: Border.all(
-                  color: Colors.transparent,
-                  width: 1.0,
-                ),
+            GestureDetector(
+              onTap: () {
+                //TODO: SUBMIT REQUEST
+              },
+              child: Container(
+                height: 50,
+                width: MediaQuery.of(context).size.width * 0.9,
+                decoration: BoxDecoration(
+                  color: Colors.grey.withOpacity(0.2),
+                  // : Colors.blue,
+                  borderRadius: BorderRadius.circular(10),
+                  border: Border.all(
+                    color: Colors.transparent,
+                    width: 1.0,
+                  ),
 
-                //more than 50% of width makes circle
-              ),
-              child: Center(
-                child: Text(
-                  "SAVE",
-                  style: TextStyle(
-                      color: Colors.grey,
-                      fontSize: 16,
-                      fontWeight: FontWeight.w700,
-                      letterSpacing: 1),
+                  //more than 50% of width makes circle
+                ),
+                child: Center(
+                  child: Text(
+                    "SAVE",
+                    style: TextStyle(
+                        color: Colors.grey,
+                        fontSize: 16,
+                        fontWeight: FontWeight.w700,
+                        letterSpacing: 1),
+                  ),
                 ),
               ),
             ),
